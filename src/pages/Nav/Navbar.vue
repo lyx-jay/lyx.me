@@ -1,7 +1,8 @@
 <script setup lang="ts">
+import routerPath from '../../router/path'
 const navItems = [
-  { name: 'Post', link: '/' },
-  { name: 'Projects', link: '/' },
+  { name: 'Post', link: routerPath.post },
+  { name: 'Projects', link: routerPath.projects },
 ]
 </script>
 
@@ -10,7 +11,7 @@ const navItems = [
     <div class="logo">Lyx</div>
     <div class="nav-list">
       <div class="nav-list__item" v-for="item in navItems">
-        {{ item.name }}
+        <router-link :to="item.link">{{ item.name }}</router-link>
       </div>
     </div>
   </header>
@@ -26,15 +27,10 @@ header {
 }
 
 .logo {
-  // position: absolute;
-  // width: 43px;
-  // height: 31px;
   font-family: 'Inter';
   font-style: italic;
   font-weight: 600;
   font-size: 26px;
-  // line-height: 31px;
-
   color: #000000;
 
 }
@@ -44,14 +40,11 @@ header {
   align-items: center;
 
   &__item {
-
     font-family: 'Inter';
-    // font-style: italic;
     font-weight: 600;
     font-size: 16px;
     color: #000000;
     margin-right: 29px;
-
   }
 }
 </style>
