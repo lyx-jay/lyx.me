@@ -1,22 +1,14 @@
 <script setup lang="ts">
 const projects = [
-  { title: 'simple Cover', link: '/', desc: 'This is my own personal project, I hope I will be lie antfummmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm' },
-  { title: 'simple Cover', link: '/#', desc: 'This is my own personal project, I hope I will be lie antfu' },
-  { title: 'simple Cover', link: '/#', desc: 'This is my own personal project, I hope I will be lie antfu' },
-  { title: 'simple Cover', link: '/', desc: 'This is my own personal project, I hope I will be lie antfu' },
-  { title: 'simple Cover', link: '/', desc: 'This is my own personal project, I hope I will be lie antfu' },
-  { title: 'simple Cover', link: '/', desc: 'This is my own personal project, I hope I will be lie antfu' },
-  { title: 'simple Cover', link: '/', desc: 'This is my own personal project, I hope I will be lie antfu' },
-  { title: 'simple Cover', link: '/', desc: 'This is my own personal project, I hope I will be lie antfu' },
-  { title: 'simple Cover', link: '/', desc: 'This is my own personal project, I hope I will be lie antfu' },
-  { title: 'simple Cover', link: '/', desc: 'This is my own personal project, I hope I will be lie antfu' },
+  { title: 'Vitepress-plugin-auto-sidebar', link: 'https://github.com/lyx-jay/auto-generate-vitepress-config', desc: 'Auto generate sidebar and multi sidebar' },
+  { title: 'Simple Cover', link: 'https://github.com/lyx-jay/s-cover', desc: 'Quickly create a technical article cover' },
 ]
 </script>
 
 <template>
   <div class="project-list">
     <div v-for="p in projects">
-      <a :href="p.link">
+      <a :href="p.link" target="_blank">
         <div class="project-list__item">
           <div class="project-list__item__img"></div>
           <div class="project-list__item__info">
@@ -54,15 +46,18 @@ const projects = [
       flex: 1;
       display: flex;
       flex-direction: column;
+      justify-content: center;
       width: 0;
       height: 100%;
 
       &__title {
         height: 20px;
         line-height: 20px;
+        font-size: 16px;
       }
 
       &__desc {
+        font-size: 14px;
         text-overflow: ellipsis;
         overflow: hidden;
       }
