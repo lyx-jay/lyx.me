@@ -24,10 +24,11 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 43px 47px 76px 47px;
+  font-family: 'Space Mono', monospace;
+  ;
 }
 
 .logo {
-  font-family: 'Inter';
   font-style: italic;
   font-weight: 600;
   font-size: 26px;
@@ -40,7 +41,6 @@ header {
   align-items: center;
 
   &__item {
-    font-family: 'Inter';
     font-weight: 600;
     font-size: 16px;
     color: #000000;
