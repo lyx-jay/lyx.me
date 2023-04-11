@@ -7,38 +7,25 @@ const navItems = [
 </script>
 
 <template>
-  <header>
-    <div class="logo">Lyx</div>
-    <div class="nav-list">
-      <div class="nav-list__item" v-for="item in navItems">
-        <router-link :to="item.link">{{ item.name }}</router-link>
-      </div>
+  <div class="nav-list">
+    <div class="nav-list__item" v-for="item in navItems">
+      <router-link :to="item.link">{{ item.name }}</router-link>
     </div>
-  </header>
+  </div>
 </template>
 
 <style scoped lang="less">
-header {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 43px 47px 76px 47px;
-  font-family: 'Space Mono', monospace;
-  ;
-}
-
-.logo {
-  font-style: italic;
-  font-weight: 600;
-  font-size: 26px;
-  color: #000000;
-
-}
-
 .nav-list {
   display: flex;
   align-items: center;
+  margin: 3em 0;
+
+  width: 100%;
+  height: 2em;
+  line-height: 2em;
+
+  font-size: 2rem;
+  font-family: 'Space Mono', monospace;
 
   &__item {
     font-weight: 600;

@@ -12,7 +12,7 @@ import Navbar from './Nav/Navbar.vue';
       </div>
       <div class="intro_right">
         <p class="intro_text moto">DO WHAT YOU LOVE</p>
-        <P class="intro_text moto">LOVE WHAT YOU DO</P>
+        <p class="intro_text moto">LOVE WHAT YOU DO</p>
       </div>
     </div>
     <Navbar />
@@ -56,14 +56,10 @@ import Navbar from './Nav/Navbar.vue';
   &_text.moto {
     font-size: 36px;
     font-family: 'Space Mono', monospace;
+
+    &:nth-child(2) {
+      text-indent: 2em;
+    }
   }
-
-}
-
-.intro-text {
-  font-family: 'Caveat', cursive;
-  // font-family: 'Inspiration', cursive;
-  // font-family: 'Space Mono', monospace;
-  font-size: 48px;
 }
 </style>
