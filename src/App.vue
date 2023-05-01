@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Home from './pages/Home.vue';
 import Navbar from './pages/Nav/Navbar.vue'
 import Introduce from './pages/introduce.vue';
 
@@ -6,15 +7,7 @@ import Introduce from './pages/introduce.vue';
 
 <template>
   <Introduce />
-  <!-- <Navbar /> -->
-  <!-- <main>
-          <router-view></router-view>
-        </main> -->
+  <!-- <Home /> -->
 </template>
 
-<style scoped lang="less">
-main {
-  width: 100%;
-  height: 100%;
-}
-</style>
+<style scopeds></style>

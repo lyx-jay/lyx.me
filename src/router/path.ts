@@ -1,4 +1,6 @@
 export default {
+  projects: '/projects',
   post: '/post',
-  projects: '/projects'
+  juejin: '/juejin',
+  github: '/github'
 }

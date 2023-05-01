@@ -1,7 +1,9 @@
 import { createApp } from 'vue'
 import router from './router'
 import App from './App.vue'
-import './style.less'
+import 'virtual:uno.css'
+// import '@unocss/reset/normalize.css'
+import './index.css'
 
 createApp(App)
   .use(router)

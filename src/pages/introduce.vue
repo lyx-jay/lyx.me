@@ -1,65 +1,39 @@
 <script setup lang="ts">
-import Navbar from './Nav/Navbar.vue';
 
 </script>
 
 <template>
-  <div class="home">
-    <div class="intro">
-      <div class="intro_left">
-        <h1 class="intro_text">Hello,</h1>
-        <h1 class="intro_text">I'm Lyx.</h1>
+  <div class='relative h-screen w-screen'>
+    <div class="relative left-2/4 top-2/4 -translate-2/4 w-full flex justify-center gap-x-30">
+      <div>
+        <h1 class="text">Hello,</h1>
+        <h1 class="text">I'm Lyx.</h1>
       </div>
-      <div class="intro_right">
-        <p class="intro_text moto">DO WHAT YOU LOVE</p>
-        <p class="intro_text moto">LOVE WHAT YOU DO</p>
+      <div class="flex flex-col justify-center">
+        <p class="moto">DO WHAT YOU LOVE</p>
+        <p class="moto">LOVE WHAT YOU DO</p>
       </div>
     </div>
-    <Navbar />
+    <div class=" border-box absolute w-25 h-25 bottom-3 left-2/4 -translate-x-2/4">DOWN</div>
   </div>
 </template>
 
 <style scoped lang="less">
-.home {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -60%);
-  width: 100%;
-  height: 60%;
-  padding: 0 18%;
+.text {
+  font-family: 'Caveat', cursive;
+  /* font-family: 'Inspiration', cursive; */
+  /* font-family: 'Space Mono', monospace; */
+  font-size: 150px;
+
 }
 
-.intro {
-  display: flex;
+.moto {
+  display: block;
+  font-size: 36px;
+  font-family: 'Space Mono', monospace;
 
-  &_left {}
-
-  &_right {
-    flex: 1;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
-
-  &_text {
-    font-family: 'Caveat', cursive;
-    // font-family: 'Inspiration', cursive;
-    // font-family: 'Space Mono', monospace;
-    font-size: 150px;
-
-  }
-
-  &_text.moto {
-    font-size: 36px;
-    font-family: 'Space Mono', monospace;
-
-    &:nth-child(2) {
-      text-indent: 2em;
-    }
+  &:nth-child(2) {
+    text-indent: 2em;
   }
 }
 </style>

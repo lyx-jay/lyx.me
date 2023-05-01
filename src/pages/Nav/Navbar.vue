@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import routerPath from '../../router/path'
 const navItems = [
-  { name: 'Post', link: routerPath.post },
   { name: 'Projects', link: routerPath.projects },
+  { name: 'Post', link: routerPath.post },
+  { name: '掘金', link: routerPath.juejin },
+  { name: 'Github', link: routerPath.github },
 ]
 </script>
 
@@ -18,18 +20,17 @@ const navItems = [
 .nav-list {
   display: flex;
   align-items: center;
-  margin: 3em 0;
 
   width: 100%;
-  height: 2em;
-  line-height: 2em;
+  height: 3em;
+  line-height: 3em;
 
   font-size: 2rem;
   font-family: 'Space Mono', monospace;
 
   &__item {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     color: #000000;
     margin-right: 29px;
   }
